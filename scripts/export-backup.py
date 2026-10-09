@@ -109,6 +109,7 @@ data['posts'] = [
         },
     }
     for r in rows('select * from posts')
+    if one(post_student, r['id'])
 ]
 
 data['students'] = [
